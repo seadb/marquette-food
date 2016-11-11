@@ -1,0 +1,22 @@
+/* app/styles.css */
+
+.nav {
+  background-color: #FFF;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  min-width: 50px;
+  padding: 50px;
+  vertical-align: middle;
+}
+
+.navItem {
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
