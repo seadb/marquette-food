@@ -6,6 +6,7 @@ class Logo extends Component {
     return (
       <div className={styles.logo} >
         Marquette Local Food
+        <img src="/public/img/marquette.png" alt="marquette county"/>
       </div>
     )
   }
