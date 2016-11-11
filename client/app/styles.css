@@ -12,11 +12,21 @@
   vertical-align: middle;
 }
 
-.navItem {
-}
-
 .header {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.logo {
+  font-family: 'Amatic SC', cursive;
+  font-size: 64px;
+  color: #30cae9;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 50px;
+  padding-left: 15px;
+  vertical-align: middle;
 }
