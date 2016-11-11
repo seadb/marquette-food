@@ -6,3 +6,9 @@
   color: #30cae9;
   font-weight: bold;
 }
+
+.logo img {
+  width: 50px;
+  padding-left: 15px;
+  vertical-align: middle;
+}

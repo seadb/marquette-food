@@ -1,0 +1,21 @@
+[
+  {
+  visibilityFilter: 'SHOW_ALL',
+  farms: {
+    isFetching: true,
+    data: [
+      {
+        name: 'Seeds and Spores Family Farm',
+        address: '724 Greenfield Rd, Marquette 49855',
+        phoneNumber: '906 458-8616',
+        email: 'seedsandspores@miuplink.com',
+        website: 'www.seedsandspores.com',
+        products: ['Vegetables', 'Fruits', 'Mushrooms', 'Eggs', 'Poultry', 'Meat', 'Flowers', 'Trees'],
+        carriers: ['Marquette Food Co-op', 'Marquette Farmers Market'],
+        growingMethod: 'Authentic, CNG',
+        CSA: true
+      }
+    ]
+  }
+}
+]

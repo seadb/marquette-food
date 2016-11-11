@@ -1,6 +1,8 @@
 module.exports = {
+  devtool: 'eval',
   entry: [
-    __dirname + '/client/app.js'
+    'webpack-dev-server/client?http://localhost:8080',
+    __dirname + '/client/app/index.js'
   ],
   output: {
       path: __dirname + '/public',

@@ -1,4 +1,4 @@
-/* styles.css */
+/* app/styles.css */
 
 .nav {
   background-color: #FFF;
@@ -13,4 +13,10 @@
 }
 
 .navItem {
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
