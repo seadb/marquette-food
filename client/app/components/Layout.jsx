@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
-import Routes from './Routes';
-import Logo from '../../Logo';
+import Routes from '../components/Routes';
+import Logo from '../components/Logo';
 import Nav from '../components/Nav';
 import styles from '../styles.css';
  
