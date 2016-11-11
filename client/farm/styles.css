@@ -1,0 +1,22 @@
+/* styles.css */
+
+.farms {
+  font-family: Arial;
+  background-color: #EEEEEE;
+}
+
+.farm {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin: 20px;
+  width: 400px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(15,15,15,0.5);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(15,15,15,0.5);
+  box-shadow: 10px 10px 5px 0px rgba(15,15,15,0.5);
+}
+.column {
+  flex-direction: column
+}
+.row {
+  flex-direction: row
+}
