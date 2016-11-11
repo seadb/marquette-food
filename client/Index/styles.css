@@ -3,3 +3,9 @@
 .index {
   font-weight: bold;
 }
+
+.plain {
+  list-style-type: none;
+  padding: 20px;
+}
+

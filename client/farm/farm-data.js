@@ -7,7 +7,7 @@ var farms = [
   email: 'autumnkjn@gmail.com',
   products: ['Mushrooms', 'Honey'],
   growingMethod: 'Authentic',
-  image: 'autumn.jpg'
+  image: true
 },
 {
   id: 2,
@@ -17,7 +17,8 @@ var farms = [
   email: 'alpacaafa@aol.com',
   website: 'www.avalonfarmalpacas.com',
   products: ['Fibers', 'Livestock'],
-  growingMethod: 'Conventional'
+  growingMethod: 'Conventional',
+  image: true
 },
 {
   id: 3,
@@ -26,7 +27,8 @@ var farms = [
   phoneNumber: '906 249-1126',
   email: ' beavergrovebison@aol.com',
   products: ['Meat', 'Livestock'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 },
 {
   id: 4,
@@ -36,7 +38,8 @@ var farms = [
   email: 'hbelle9999@aol.com',
   products: ['Eggs', 'Poultry'],
   carriers: ['Marquette Food Co-op, Econo Foods'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 },
 {
   id: 5,
@@ -173,7 +176,8 @@ var farms = [
   products: ['Vegetables', 'Fruits', 'Mushrooms', 'Eggs', 'Poultry', 'Meat', 'Flowers', 'Trees'],
   carriers: ['Marquette Food Co-op', 'Marquette Farmers Market'],
   growingMethod: 'Authentic, CNG',
-  CSA: true
+  CSA: true,
+  image: true
 },
 {
   id: 19,
@@ -184,7 +188,8 @@ var farms = [
   website: 'www.shadygrovefarmup.com',
   products: ['Vegetables', 'Fruits', 'Mushrooms', 'Eggs', 'Poultry', 'Meat', 'Honey', 'Fibers'],
   carriers: ['Mares Z Doats', 'Babycakes Muffin Company'],
-  growingMethod: 'Authentic, CNG, MAEAP Verified'
+  growingMethod: 'Authentic, CNG, MAEAP Verified',
+  image: true
 },
 {
   id: 20,

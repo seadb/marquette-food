@@ -1,10 +1,24 @@
 import React, { PropTypes } from 'react'
-import styles from './styles.css';
+import styles from '../styles.css'
+import CardImage from '../components/card-image'
+
+const imagePath = (name) => {
+  const apostrophe = name.indexOf("’")
+  let first;
+  if (apostrophe > -1) {
+    console.log(apostrophe)
+    first = name.slice(0, apostrophe).toLowerCase()
+  } else {
+    first = name.slice(0,name.indexOf('\ ')).toLowerCase()
+  } 
+  const path = "public/img/" + first + ".jpg"
+  return path
+}
 
 const Farm = ({name, address, phoneNumber, email, website, products, carriers, growingMethod, CSA, image}) => {
   return (
     <section className={styles.farm}>
-      {image ? <img src={"public/img/"+image} /> : null}
+      {image ? <CardImage width="300" height="225" src={imagePath(name)}  /> : null}
       <b>{name}</b> <br />
       {address}<br />
       {phoneNumber ? <span>{phoneNumber}<br /></span> : null}
@@ -16,7 +30,7 @@ const Farm = ({name, address, phoneNumber, email, website, products, carriers, g
       <ul>
         {products.map((product) => <li>{product}</li> )}
       </ul>
-      {growingMethod} Growing Method<br />
+      <i>{growingMethod}</i> Growing Method<br />
     </section>
   )
 }
@@ -31,7 +45,7 @@ Farm.propTypes = {
         carriers: PropTypes.array, 
         growingMethod: PropTypes.string,
         CSA: PropTypes.bool,
-        image: PropTypes.string
+        image: PropTypes.bool
 }
 
 export default Farm

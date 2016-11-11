@@ -1,6 +1,8 @@
 /* styles.css */
 
-.farms {
+.farms h3 {
+  /* TODO: figure out how to do small caps
+   */
 }
 
 .farms ul {
@@ -31,3 +33,10 @@
   flex-direction: row
 }
 
+.cardImage {
+  overflow: hidden;
+}
+
+.cardImage img {
+  width: 100%;
+}
