@@ -54,7 +54,8 @@ FarmList.propTypes = {
           products: PropTypes.array,
           carriers: PropTypes.array, 
           growingMethod: PropTypes.string,
-          CSA: PropTypes.bool
+          CSA: PropTypes.bool,
+          image: PropTypes.string
   }).isRequired).isRequired,
 }
 

@@ -10,7 +10,9 @@ const Layout = () => (
       <Logo/>
       <Nav/>
     </div>
-    <Routes />
+    <div className={styles.body} >
+      <Routes />
+    </div>
   </div>
 )
 

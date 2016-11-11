@@ -6,7 +6,8 @@ var farms = [
   phoneNumber: '906 250-3095',
   email: 'autumnkjn@gmail.com',
   products: ['Mushrooms', 'Honey'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: 'autumn.jpg'
 },
 {
   id: 2,
