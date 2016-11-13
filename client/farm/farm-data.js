@@ -36,6 +36,7 @@ var farms = [
   address: '467 Beckman Rd, Skandia 49885',
   phoneNumber: '906 942-7254',
   email: 'hbelle9999@aol.com',
+  website: 'https://www.facebook.com/BSB-Farms-247378572094960/',
   products: ['Eggs', 'Poultry'],
   carriers: ['Marquette Food Co-op, Econo Foods'],
   growingMethod: 'Authentic',
@@ -71,6 +72,7 @@ var farms = [
   carriers: ['Marquette Farmers Market, Marquette Food Co-op'],
   growingMethod: 'Authentic',
   CSA: true,
+  image: true
 },
 {
   id: 8,
@@ -78,9 +80,11 @@ var farms = [
   address: '9042 US 41 South, Skandia 49885',
   phoneNumber: '906 362-5016',
   email: 'everyieldingacres@yahoo.com',
+  website: 'https://www.facebook.com/Ever-Yielding-Acres-440048942844934/',
   products: ['Vegetables', 'Fruits', 'Eggs', 'Poultry', 'Meat', 'Maple Syrup', 'Gourds', 'Trees', 'Livestock', 'Straw'],
   carriers: ['Marquette Farmers Market', 'Negaunee Farmers Market'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 },
 {
   id: 9,
@@ -89,7 +93,8 @@ var farms = [
   phoneNumber: '906 475-9338',
   email: 'gatherngreens@hotmail.com',
   products: ['Vegetables', 'Fruits', 'Mushrooms', 'Honey', 'Flowers'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 },
 {
   id: 10,

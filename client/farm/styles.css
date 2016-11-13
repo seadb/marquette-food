@@ -1,10 +1,8 @@
 /* styles.css */
 
-.farms h3 {
-  /* TODO: figure out how to do small caps
-   */
+.glossary h3 {
+  font-variant: small-caps;
 }
-
 .farms ul {
   padding-left: 20px;
   margin: 0px;
@@ -30,13 +28,20 @@
 }
 .row {
   display: flex;
-  flex-direction: row
+  flex-direction: row;
+  width: 1000px;
 }
 
 .cardImage {
   overflow: hidden;
+  vertical-align: middle;
 }
 
 .cardImage img {
   width: 100%;
+}
+
+.entry {
+  padding-right: 50px;
+  padding-bottom: 1em;
 }

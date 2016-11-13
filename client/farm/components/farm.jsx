@@ -18,7 +18,7 @@ const imagePath = (name) => {
 const Farm = ({name, address, phoneNumber, email, website, products, carriers, growingMethod, CSA, image}) => {
   return (
     <section className={styles.farm}>
-      {image ? <CardImage width="300" height="225" src={imagePath(name)}  /> : null}
+      {image ? <CardImage width="400px" height="200px" src={imagePath(name)}  /> : null}
       <b>{name}</b> <br />
       {address}<br />
       {phoneNumber ? <span>{phoneNumber}<br /></span> : null}
@@ -28,7 +28,7 @@ const Farm = ({name, address, phoneNumber, email, website, products, carriers, g
       {website ? <a href={"http://"+website}>Website<br/> </a> : null}
       Produce:
       <ul>
-        {products.map((product) => <li>{product}</li> )}
+        {products.map((product, index) => <li key={index}>{product}</li> )}
       </ul>
       <i>{growingMethod}</i> Growing Method<br />
     </section>
