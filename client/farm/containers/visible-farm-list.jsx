@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import FarmList from './farm-list'
+import FarmList from '../components/farm-list'
 
 const compare = (a,b) => {
   if (a.name < b.name)
@@ -18,13 +18,9 @@ const getVisibleFarms = (farms, filter) => {
   }
 }
 
-const mapStateToProps = (state) => {
-  console.log(state);
-  const props = {
+const mapStateToProps = (state) => ({
     farms: getVisibleFarms(state.farms.data, state.visibilityFilter)
-  }
-  return props;
-}
+})
 
 
 const VisibleFarmList = connect(

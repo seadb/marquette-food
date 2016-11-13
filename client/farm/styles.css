@@ -1,22 +1,47 @@
 /* styles.css */
 
-.farms {
-  font-family: Arial;
-  background-color: #EEEEEE;
+.glossary h3 {
+  font-variant: small-caps;
 }
-
+.farms ul {
+  padding-left: 20px;
+  margin: 0px;
+}
 .farm {
-  background-color: #FFFFFF;
+  background-color: white;
   padding: 20px;
   margin: 20px;
   width: 400px;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(15,15,15,0.5);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(15,15,15,0.5);
-  box-shadow: 10px 10px 5px 0px rgba(15,15,15,0.5);
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(15,15,15,0.25);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(15,15,15,0.25);
+  box-shadow: 2px 2px 2px 0px rgba(15,15,15,0.25);
+}
+
+.farm:hover {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(48,202,233,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(48,202,233,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(48,202,233,0.75);
 }
 .column {
+  display: flex;
   flex-direction: column
 }
 .row {
-  flex-direction: row
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+}
+
+.cardImage {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.cardImage img {
+  width: 100%;
+}
+
+.entry {
+  padding-right: 50px;
+  padding-bottom: 1em;
 }

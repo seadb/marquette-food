@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
-import Farm from './farm'
-import { fetchFarms } from './farm-actions'
-import styles from './styles.css';
+import Farm from '../components/farm'
+import { fetchFarms } from '../farm-actions'
+import styles from '../styles.css';
 
 function splitInHalf(farms) {
   var halfLength = Math.ceil(farms.length / 2); 
@@ -54,7 +54,8 @@ FarmList.propTypes = {
           products: PropTypes.array,
           carriers: PropTypes.array, 
           growingMethod: PropTypes.string,
-          CSA: PropTypes.bool
+          CSA: PropTypes.bool,
+          image: PropTypes.bool
   }).isRequired).isRequired,
 }
 

@@ -30,3 +30,19 @@
   padding-left: 15px;
   vertical-align: middle;
 }
+
+.body {
+  background-color: #EEEEEE;
+  padding: 15px;
+  font-family: Arial;
+  line-height: 1.6;
+}
+
+a {
+  color: #30cae9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

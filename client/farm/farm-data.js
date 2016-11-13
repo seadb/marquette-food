@@ -6,7 +6,8 @@ var farms = [
   phoneNumber: '906 250-3095',
   email: 'autumnkjn@gmail.com',
   products: ['Mushrooms', 'Honey'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 },
 {
   id: 2,
@@ -16,7 +17,8 @@ var farms = [
   email: 'alpacaafa@aol.com',
   website: 'www.avalonfarmalpacas.com',
   products: ['Fibers', 'Livestock'],
-  growingMethod: 'Conventional'
+  growingMethod: 'Conventional',
+  image: true
 },
 {
   id: 3,
@@ -25,7 +27,8 @@ var farms = [
   phoneNumber: '906 249-1126',
   email: ' beavergrovebison@aol.com',
   products: ['Meat', 'Livestock'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 },
 {
   id: 4,
@@ -33,9 +36,11 @@ var farms = [
   address: '467 Beckman Rd, Skandia 49885',
   phoneNumber: '906 942-7254',
   email: 'hbelle9999@aol.com',
+  website: 'https://www.facebook.com/BSB-Farms-247378572094960/',
   products: ['Eggs', 'Poultry'],
   carriers: ['Marquette Food Co-op, Econo Foods'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 },
 {
   id: 5,
@@ -67,6 +72,7 @@ var farms = [
   carriers: ['Marquette Farmers Market, Marquette Food Co-op'],
   growingMethod: 'Authentic',
   CSA: true,
+  image: true
 },
 {
   id: 8,
@@ -74,9 +80,11 @@ var farms = [
   address: '9042 US 41 South, Skandia 49885',
   phoneNumber: '906 362-5016',
   email: 'everyieldingacres@yahoo.com',
+  website: 'https://www.facebook.com/Ever-Yielding-Acres-440048942844934/',
   products: ['Vegetables', 'Fruits', 'Eggs', 'Poultry', 'Meat', 'Maple Syrup', 'Gourds', 'Trees', 'Livestock', 'Straw'],
   carriers: ['Marquette Farmers Market', 'Negaunee Farmers Market'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 },
 {
   id: 9,
@@ -85,7 +93,8 @@ var farms = [
   phoneNumber: '906 475-9338',
   email: 'gatherngreens@hotmail.com',
   products: ['Vegetables', 'Fruits', 'Mushrooms', 'Honey', 'Flowers'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 },
 {
   id: 10,
@@ -172,7 +181,8 @@ var farms = [
   products: ['Vegetables', 'Fruits', 'Mushrooms', 'Eggs', 'Poultry', 'Meat', 'Flowers', 'Trees'],
   carriers: ['Marquette Food Co-op', 'Marquette Farmers Market'],
   growingMethod: 'Authentic, CNG',
-  CSA: true
+  CSA: true,
+  image: true
 },
 {
   id: 19,
@@ -183,7 +193,8 @@ var farms = [
   website: 'www.shadygrovefarmup.com',
   products: ['Vegetables', 'Fruits', 'Mushrooms', 'Eggs', 'Poultry', 'Meat', 'Honey', 'Fibers'],
   carriers: ['Mares Z Doats', 'Babycakes Muffin Company'],
-  growingMethod: 'Authentic, CNG, MAEAP Verified'
+  growingMethod: 'Authentic, CNG, MAEAP Verified',
+  image: true
 },
 {
   id: 20,
