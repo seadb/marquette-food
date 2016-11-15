@@ -21,13 +21,10 @@ and then reintroduced to the herd or flock.`
 },
 {
   term: 'MAEAP',    
-  definition: `(defined by www.maeap.org)
-The Michigan Agriculture Environmental Assurance Program 
-(MAEAP) is an innovative, proactive program that helps farms of all 
-sizes and commodities voluntarily prevent or minimize agricultural 
-pollution risks. Farmers reduce legal and environmental risks 
-through MAEAP’s three-phase process: education, farm-specific risk 
-assessment, and an on-farm verification of his/her practices.`
+  definition: `Michigan Agriculture Environmental Assurance Program;
+  a program that helps farms voluntarily prevent or minimize agricultural
+  pollution risks via education, farm-specific risk assessment, 
+  and an on-farm verification`
 },
 {
   term: 'Certified Organic',
@@ -74,12 +71,14 @@ a farm and a community of supporters.  CSA members pay for a share of the
 season’s harvest, and the farm supplies periodic (often weekly) distributions
 of produce throughout the season.`
 },
+  /*
 {
   term: 'Herd Shares',
   definition: `Members buy shares of a herd of animals.
     Since the member pays for ownership rights of part of the herd,
     the farmer can legally give them raw unpasteurized milk.`
 }
+*/
 ]
 
 const sources = {

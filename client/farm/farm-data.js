@@ -98,12 +98,13 @@ var farms = [
 },
 {
   id: 10,
-  name: 'Goodwins Farm',
+  name: 'Goodwin’s Farm',
   address: '436 Town Hall Rd, Skandia 49885',
   phoneNumber: '906 942-7061',
   email: 'ggoodwindb@aol.com',
   products: ['Eggs', 'Dairy', 'Maple Syrup', 'Livestock'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 },
 {
   id: 11,
@@ -112,7 +113,8 @@ var farms = [
   phoneNumber: '906 226-2213',
   products: ['Vegetables', 'Fruits', 'Flowers', 'Trees'],
   carriers: ['Marquette Farmers Market', 'Negaunee Farmers Market', 'Marquette Food Co-op'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 },
 {
   id: 12,
@@ -141,7 +143,8 @@ var farms = [
   email: 'jermohl@gmail.com',
   products: ['Maple Syrup'],
   carriers: ['Marquette Farmers Market'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 },
 {
   id: 15,
@@ -160,7 +163,8 @@ var farms = [
   email: 'tswenor@nmu.edu',
   products: ['Vegetables', 'Fruits'],
   carriers: ['NMU’s Culinary Cafe'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 } ,
 {
   id: 17,
@@ -218,13 +222,14 @@ var farms = [
 },
 {
   id: 22,
-  name: 'Wiaters Farm and Adventures',
+  name: 'Wiater’s Farm and Adventures',
   address: '219 Lawson Rd, Skandia 49885',
   phoneNumber: '906 942-7744',
   email: 'cwiater@tds.net',
   products: ['Vegetables', 'Poultry'],
   carriers: ['Farmers Market'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 },
 {
   id: 23,
@@ -235,7 +240,8 @@ var farms = [
   website: 'www.winterskyshetlands.blogspot.com',
   products: ['Vegetables', 'Fruits', 'Eggs', 'Fibers', 'Livestock'],
   carriers: ['Marquette Farmer’s Market', 'Knitter’s Niche'],
-  growingMethod: 'Conventional'
+  growingMethod: 'Conventional',
+  image: true
 },
 {
   id: 24,
@@ -245,7 +251,8 @@ var farms = [
   email: 'mlwix@yahoo.com',
   products: ['Vegetables', 'Small Grains', 'Maple Syrup', 'Hay', 'Straw'],
   carriers: ['Marquette Food Co-op', 'UP Food Exchange', 'Sweet Water Cafe', 'Superior Entertainment'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  image: true
 }
 ]
 
