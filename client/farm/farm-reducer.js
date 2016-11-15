@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { REQUEST_FARMS, RECEIVE_FARMS, SET_VISIBILITY_FILTER, VisibilityFilters } from './farm-actions'
+import { REQUEST_FARMS, RECEIVE_FARMS, TOGGLE_FARM, SET_VISIBILITY_FILTER, VisibilityFilters } from './farm-actions'
 
 const initialState = {
   visibilityFilter: VisibilityFilters.SHOW_ALL,
@@ -33,6 +33,17 @@ function farms(state = initialState.farms, action) {
       return Object.assign({}, state, {
         isFetching: false,
         data: action.farms,
+      })
+    case TOGGLE_FARM:
+      return Object.assign({}, state, {
+        data: state.data.map((farm, index) => {
+          if (index+1 === action.index) {
+            return Object.assign({}, farm, {
+              selected: !farm.selected
+            })
+          }
+          return farm
+        })
       })
     default:
       return state

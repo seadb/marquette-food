@@ -21,12 +21,14 @@ class FarmList extends Component {
   }
   render() {
     const halves = splitInHalf(this.props.farms);
+    const { dispatch } = this.props
     return (
       <div className={styles.row}>
         <div className={styles.column}>
             {halves.firstHalf.map(farm =>
               <Farm
                 key={farm.id}
+                dispatch={dispatch}
                 {...farm}
               />
             )}
@@ -35,6 +37,7 @@ class FarmList extends Component {
           {halves.lastHalf.map(farm =>
               <Farm
                 key={farm.id}
+                dispatch={dispatch}
                 {...farm}
               />
             )}
