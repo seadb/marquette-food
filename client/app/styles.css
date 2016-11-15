@@ -33,9 +33,10 @@
 
 .body {
   background-color: #EEEEEE;
-  padding: 15px;
-  font-family: Arial;
+  font-family: Lucida Grande, Helvetica, Arial;
+  font-size: 14px;
   line-height: 1.6;
+  padding: 15px;
 }
 
 a {
