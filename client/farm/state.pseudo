@@ -1,6 +1,7 @@
 [
   {
   visibilityFilter: 'SHOW_ALL',
+  selectedFarms: [ 1, 3, 6],
   farms: {
     isFetching: true,
     data: [
@@ -13,7 +14,9 @@
         products: ['Vegetables', 'Fruits', 'Mushrooms', 'Eggs', 'Poultry', 'Meat', 'Flowers', 'Trees'],
         carriers: ['Marquette Food Co-op', 'Marquette Farmers Market'],
         growingMethod: 'Authentic, CNG',
-        CSA: true
+        CSA: true,
+        image: true,
+        selected: false
       }
     ]
   }

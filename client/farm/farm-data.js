@@ -7,7 +7,8 @@ var farms = [
   email: 'autumnkjn@gmail.com',
   products: ['Mushrooms', 'Honey'],
   growingMethod: 'Authentic',
-  image: true
+  image: true,
+  selected: false
 },
 {
   id: 2,
@@ -18,7 +19,8 @@ var farms = [
   website: 'www.avalonfarmalpacas.com',
   products: ['Fibers', 'Livestock'],
   growingMethod: 'Conventional',
-  image: true
+  image: true,
+  selected: false
 },
 {
   id: 3,
@@ -28,7 +30,8 @@ var farms = [
   email: ' beavergrovebison@aol.com',
   products: ['Meat', 'Livestock'],
   growingMethod: 'Authentic',
-  image: true
+  image: true,
+  selected: false
 },
 {
   id: 4,
@@ -40,7 +43,8 @@ var farms = [
   products: ['Eggs', 'Poultry'],
   carriers: ['Marquette Food Co-op, Econo Foods'],
   growingMethod: 'Authentic',
-  image: true
+  image: true,
+  selected: false
 },
 {
   id: 5,
@@ -50,7 +54,8 @@ var farms = [
   email: 'cedarcreekfarmup@gmail.com',
   products: ['Vegetables', 'Fruits', 'Mushrooms', 'Trees'],
   carriers: ['Local restaurants'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  selected: false
 },
 {
   id: 6,
@@ -59,7 +64,8 @@ var farms = [
   phoneNumber: '906 360-1010',
   email: 'dionysus1@ymail.com',
   products: ['Vegetables', 'Fruits'],
-  growingMethod: 'Conventional'
+  growingMethod: 'Conventional',
+  selected: false
 },
 {
   id: 7,
@@ -72,7 +78,8 @@ var farms = [
   carriers: ['Marquette Farmers Market, Marquette Food Co-op'],
   growingMethod: 'Authentic',
   CSA: true,
-  image: true
+  image: true,
+  selected: false
 },
 {
   id: 8,
@@ -84,7 +91,8 @@ var farms = [
   products: ['Vegetables', 'Fruits', 'Eggs', 'Poultry', 'Meat', 'Maple Syrup', 'Gourds', 'Trees', 'Livestock', 'Straw'],
   carriers: ['Marquette Farmers Market', 'Negaunee Farmers Market'],
   growingMethod: 'Authentic',
-  image: true
+  image: true,
+  selected: false
 },
 {
   id: 9,
@@ -94,7 +102,8 @@ var farms = [
   email: 'gatherngreens@hotmail.com',
   products: ['Vegetables', 'Fruits', 'Mushrooms', 'Honey', 'Flowers'],
   growingMethod: 'Authentic',
-  image: true
+  image: true,
+  selected: false
 },
 {
   id: 10,
@@ -104,7 +113,8 @@ var farms = [
   email: 'ggoodwindb@aol.com',
   products: ['Eggs', 'Dairy', 'Maple Syrup', 'Livestock'],
   growingMethod: 'Authentic',
-  image: true
+  image: true,
+  selected: false
 },
 {
   id: 11,
@@ -114,7 +124,8 @@ var farms = [
   products: ['Vegetables', 'Fruits', 'Flowers', 'Trees'],
   carriers: ['Marquette Farmers Market', 'Negaunee Farmers Market', 'Marquette Food Co-op'],
   growingMethod: 'Authentic',
-  image: true
+  image: true,
+  selected: false
 },
 {
   id: 12,
@@ -124,7 +135,8 @@ var farms = [
   email: 'happyhyeracres@live.com',
   products: ['Vegetables', 'Maple Syrup'],
   carriers: ['Marquette Food Co-op'],
-  growingMethod: 'Authentic'
+  growingMethod: 'Authentic',
+  selected: false
 },
 {
   id: 13,
@@ -133,7 +145,8 @@ var farms = [
   phoneNumber: '906 346-7525',
   email: 'rlauren@honorcu.com',
   products: ['Poultry', 'Meat', 'Honey', 'Livestock'],
-  growingMethod: 'Conventional'
+  growingMethod: 'Conventional',
+  selected: false
 },
 {
   id: 14,
@@ -144,7 +157,8 @@ var farms = [
   products: ['Maple Syrup'],
   carriers: ['Marquette Farmers Market'],
   growingMethod: 'Authentic',
-  image: true
+  image: true,
+  selected: false
 },
 {
   id: 15,
@@ -155,6 +169,7 @@ var farms = [
   products: ['Vegetables', 'Fruits', 'Eggs', 'Poultry', 'Meat'],
   growingMethod: 'Authentic',
   CSA: true,
+  selected: false
 },
 {
   id: 16,
@@ -164,7 +179,8 @@ var farms = [
   products: ['Vegetables', 'Fruits'],
   carriers: ['NMU’s Culinary Cafe'],
   growingMethod: 'Authentic',
-  image: true
+  image: true,
+  selected: false
 } ,
 {
   id: 17,
@@ -173,7 +189,8 @@ var farms = [
   phoneNumber: '906 942-7389',
   email: 'hangitwsct@gmail.com',
   products: ['Eggs', 'Meat', 'Livestock'],
-  growingMethod: 'Conventional'
+  growingMethod: 'Conventional',
+  selected: false
 },
 {
   id: 18,
@@ -186,7 +203,8 @@ var farms = [
   carriers: ['Marquette Food Co-op', 'Marquette Farmers Market'],
   growingMethod: 'Authentic, CNG',
   CSA: true,
-  image: true
+  image: true,
+  selected: false
 },
 {
   id: 19,
@@ -198,7 +216,8 @@ var farms = [
   products: ['Vegetables', 'Fruits', 'Mushrooms', 'Eggs', 'Poultry', 'Meat', 'Honey', 'Fibers'],
   carriers: ['Mares Z Doats', 'Babycakes Muffin Company'],
   growingMethod: 'Authentic, CNG, MAEAP Verified',
-  image: true
+  image: true,
+  selected: false
 },
 {
   id: 20,
@@ -208,7 +227,8 @@ var farms = [
   email: 'countrymom89@hotmail.com',
   products: ['Vegetables'],
   carriers: ['Republic Farmers Market'],
-  growingMethod: 'Conventional'
+  growingMethod: 'Conventional',
+  selected: false
 },
 {
   id: 21,
@@ -218,7 +238,9 @@ var farms = [
   email: 'greggreen_8@hotmail.com',
   products: ['Vegetables', 'Flowers', 'Hay'],
   carriers: ['Negaunee Farmers Market', 'Marquette Farmers Market', 'Marquette Food Co-op'],
-  growingMethod: 'Authentic, CNG'
+  growingMethod: 'Authentic, CNG',
+  selected: false
+
 },
 {
   id: 22,
@@ -229,7 +251,9 @@ var farms = [
   products: ['Vegetables', 'Poultry'],
   carriers: ['Farmers Market'],
   growingMethod: 'Authentic',
-  image: true
+  image: true,
+  selected: false
+
 },
 {
   id: 23,
@@ -241,7 +265,9 @@ var farms = [
   products: ['Vegetables', 'Fruits', 'Eggs', 'Fibers', 'Livestock'],
   carriers: ['Marquette Farmer’s Market', 'Knitter’s Niche'],
   growingMethod: 'Conventional',
-  image: true
+  image: true,
+  selected: false
+
 },
 {
   id: 24,
@@ -252,7 +278,9 @@ var farms = [
   products: ['Vegetables', 'Small Grains', 'Maple Syrup', 'Hay', 'Straw'],
   carriers: ['Marquette Food Co-op', 'UP Food Exchange', 'Sweet Water Cafe', 'Superior Entertainment'],
   growingMethod: 'Authentic',
-  image: true
+  image: true,
+  selected: false
+
 }
 ]
 
