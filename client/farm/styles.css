@@ -31,9 +31,6 @@
   box-shadow:         2px 2px 5px 0px rgba(15,15,15,0.25) inset;
 }
 
-
-
-
 .column {
   display: flex;
   flex-direction: column

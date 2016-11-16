@@ -21,7 +21,7 @@ const onFarmClick = (id, dispatch) => {
 
 const Farm = ({id, name, address, phoneNumber, email, website, products, carriers, growingMethod, CSA, image, selected, dispatch}) => {
   return (
-    <section className={selected ? styles.selectedFarm : styles.farm} onClick={() => onFarmClick(id, dispatch)}>
+    <section onClick={() => onFarmClick(id, dispatch)}>
       {image ? <CardImage width="400px" height="200px" src={imagePath(name)}  /> : null}
       <b>{name}</b> <br />
       {address}<br />
