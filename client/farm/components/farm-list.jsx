@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import Farm from '../components/farm'
 import FlipCard from '../../flip-card'
-import { fetchFarms } from '../farm-actions'
+import { fetchFarms, toggleFarm } from '../farm-actions'
 import styles from '../styles.css';
 
 const splitInHalf = (farms) => {
@@ -26,6 +26,13 @@ const front = (farm, dispatch) => (
             {...farm}
           />
         )
+
+const onCardClick = (id, dispatch) => {
+  console.log(id)
+  console.log(dispatch)
+  dispatch(toggleFarm(id))
+}
+
 class FarmList extends Component {
 
   componentDidMount() {
@@ -35,19 +42,19 @@ class FarmList extends Component {
   render() {
     const halves = splitInHalf(this.props.farms);
     const { dispatch } = this.props
-
-    console.log(styles.farm)
     return (
       <div className={styles.row}>
         <div className={styles.column}>
-
             {halves.firstHalf.map(farm =>
             <FlipCard
               front={front(farm, dispatch)}
               back={back(farm)}
               key={farm.id}
+              id={farm.id}
               className={styles.farm}
               selected={farm.selected}
+              onClick={onCardClick}
+              clickProps={[farm.id, dispatch]}
             /> 
             )}
         </div>
@@ -57,8 +64,11 @@ class FarmList extends Component {
               front={front(farm, dispatch)}
               back={back(farm)}
               key={farm.id}
+              id={farm.id}
               className={styles.farm}
               selected={farm.selected}
+              onClick={onCardClick}
+              clickProps={[farm.id, dispatch]}
             /> 
             )}
         </div>
@@ -78,7 +88,9 @@ FarmList.propTypes = {
           carriers: PropTypes.array, 
           growingMethod: PropTypes.string,
           CSA: PropTypes.bool,
-          image: PropTypes.bool
+          image: PropTypes.bool,
+          onClick: PropTypes.func,
+          clickProps: PropTypes.object
   }).isRequired).isRequired,
 }
 

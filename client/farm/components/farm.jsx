@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react'
 import styles from '../styles.css'
 import CardImage from '../components/card-image'
-import { toggleFarm } from '../farm-actions'
 
 const imagePath = (name) => {
   const apostrophe = name.indexOf("’")
@@ -15,13 +14,10 @@ const imagePath = (name) => {
   return path
 }
 
-const onFarmClick = (id, dispatch) => {
-  dispatch(toggleFarm(id))
-}
 
 const Farm = ({id, name, address, phoneNumber, email, website, products, carriers, growingMethod, CSA, image, selected, dispatch}) => {
   return (
-    <section onClick={() => onFarmClick(id, dispatch)}>
+    <section >
       {image ? <CardImage width="400px" height="200px" src={imagePath(name)}  /> : null}
       <b>{name}</b> <br />
       {address}<br />
