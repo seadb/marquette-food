@@ -21,11 +21,9 @@ class FlipCard extends Component {
   render() {
     return (
       <div
-        className={(styles.flipCard + (this.props.selected ? ' ' + styles.flipped : ''))}
+        className={(styles.flipCard + (this.props.flipped ? ' ' + styles.flipped : ''))}
         onTouchStart={() => this.classList.toggle('hover')}
-        onClick={() => { 
-          console.log(this.props.clickProps)
-          this.props.onClick(...this.props.clickProps) }}
+        onClick={() => { this.props.onClick(...this.props.clickProps) }}
       >
      	  <div
           id={"inner"+ this.props.id}
@@ -56,13 +54,9 @@ FlipCard.propTypes = {
   className: PropTypes.string,
   frontClass: PropTypes.string,
   backClass: PropTypes.string,
-  perspective: PropTypes.string,
-  selected: PropTypes.bool,
+  flipped: PropTypes.bool,
   onClick: PropTypes.func,
   clickProps: PropTypes.array
-}
-
-FlipCard.defaultProps = {
 }
 
 export default FlipCard
