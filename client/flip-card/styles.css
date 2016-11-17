@@ -4,19 +4,10 @@
 }
 
   /* flip the pane when hovered */
-.flip-card:hover .flipper, .flip-card.flipped .flipper {
+.flipCard.flipped .flipper {
   transform: rotateY(180deg);
 }
 
-.flip-card, .front, .back {
-/*  width: 320px;
-  height: 480px;*/
-}
-.front:after {
-    content: "";
-    display: block;
-    clear: both;
-}
 .flipper {
   transition: 0.6s;
   transform-style: preserve-3d;
@@ -25,8 +16,9 @@
 
 .front, .back {
 	backface-visibility: hidden;
-	top: 0;
-	left: 0;
+  position: absolute;
+	top: 15px;
+	left: 15px;
 }
 
 /* front pane, placed above back */
@@ -34,13 +26,11 @@
   z-index: 2;
   /* for firefox 31 */
   transform: rotateY(0deg);
-  float: left;
 }
 
 /* back, initially hidden pane */
 .back {
   transform: rotateY(180deg);
-  position: relative;
 }
 
 
