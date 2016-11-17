@@ -28,8 +28,6 @@ const front = (farm, dispatch) => (
         )
 
 const onCardClick = (id, dispatch) => {
-  console.log(id)
-  console.log(dispatch)
   dispatch(toggleFarm(id))
 }
 
@@ -42,35 +40,25 @@ class FarmList extends Component {
   render() {
     const halves = splitInHalf(this.props.farms);
     const { dispatch } = this.props
+    const flipCard = (farm) => (
+            <FlipCard
+              front={front(farm, dispatch)}
+              back={back(farm)}
+              key={farm.id}
+              id={farm.id}
+              className={styles.farm}
+              flipped={farm.selected}
+              onClick={onCardClick}
+              clickProps={[farm.id, dispatch]}
+            /> 
+    )
     return (
       <div className={styles.row}>
         <div className={styles.column}>
-            {halves.firstHalf.map(farm =>
-            <FlipCard
-              front={front(farm, dispatch)}
-              back={back(farm)}
-              key={farm.id}
-              id={farm.id}
-              className={styles.farm}
-              selected={farm.selected}
-              onClick={onCardClick}
-              clickProps={[farm.id, dispatch]}
-            /> 
-            )}
+          {halves.firstHalf.map(farm => flipCard(farm))}
         </div>
         <div className={styles.column}>
-          {halves.lastHalf.map(farm =>
-            <FlipCard
-              front={front(farm, dispatch)}
-              back={back(farm)}
-              key={farm.id}
-              id={farm.id}
-              className={styles.farm}
-              selected={farm.selected}
-              onClick={onCardClick}
-              clickProps={[farm.id, dispatch]}
-            /> 
-            )}
+          {halves.lastHalf.map(farm => flipCard(farm))}
         </div>
       </div>
     )
