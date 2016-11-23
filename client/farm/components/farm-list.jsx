@@ -3,16 +3,8 @@ import Farm from '../components/farm'
 import FlipCard from '../../flip-card'
 import { fetchFarms, toggleFarm } from '../farm-actions'
 import styles from '../styles.css';
+import style from '../../flip-card/styles.css'
 
-const splitInHalf = (farms) => {
-  var halfLength = Math.ceil(farms.length / 2); 
-  var firstHalf = farms.slice(0,halfLength);
-  var lastHalf = farms.slice(halfLength, farms.length);
-  return ({
-    firstHalf: firstHalf,
-    lastHalf: lastHalf
-  })
-}
 
 const back = (farm) => (
   <div>
@@ -38,28 +30,28 @@ class FarmList extends Component {
     dispatch(fetchFarms())
   }
   render() {
-    const halves = splitInHalf(this.props.farms);
-    const { dispatch } = this.props
+    const segment = Math.ceil(this.props.farms.length / 2) 
+    const { dispatch, farms } = this.props
     const flipCard = (farm) => (
             <FlipCard
               front={front(farm, dispatch)}
               back={back(farm)}
               key={farm.id}
               id={farm.id}
-              className={styles.farm}
+              className={style.card}
               flipped={farm.selected}
               onClick={onCardClick}
               clickProps={[farm.id, dispatch]}
             /> 
     )
     return (
-      <div className={styles.row}>
-        <div className={styles.column}>
-          {halves.firstHalf.map(farm => flipCard(farm))}
-        </div>
-        <div className={styles.column}>
-          {halves.lastHalf.map(farm => flipCard(farm))}
-        </div>
+      <div className="row">
+          <div className={"col-xs-12 col-sm-6 "+styles.col}>
+          {farms.slice(0,segment).map(farm => flipCard(farm) )}
+          </div>
+          <div className={"col-xs-12 col-sm-6 "+styles.col}>
+          {farms.slice(segment).map(farm => flipCard(farm) )}
+          </div>
       </div>
     )
   }

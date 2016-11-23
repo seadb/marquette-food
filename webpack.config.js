@@ -20,7 +20,7 @@ module.exports = {
     },
     {
       test: /\.css$/,
-      loader: 'style!css-loader?camelCase&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]' 
+      loader: 'style-loader!css-loader?modules&camelCase&sourceMap&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]' 
     }]
   },
   devServer: {

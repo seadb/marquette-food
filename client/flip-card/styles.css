@@ -4,7 +4,7 @@
 }
 
   /* flip the pane when hovered */
-.flipCard.flipped .flipper {
+.flip-card.flipped .flipper {
   transform: rotateY(180deg);
 }
 
@@ -12,6 +12,22 @@
   transition: 0.6s;
   transform-style: preserve-3d;
   position: relative;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  -moz-box-shadow:    2px 2px 2px 0px rgba(15,15,15,0.25);
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(15,15,15,0.25);
+  box-shadow:         2px 2px 2px 0px rgba(15,15,15,0.25);
+  width: 400px;
+}
+
+.card:hover {
+  -moz-box-shadow:    0px 0px 5px 0px rgba(48,202,233,0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(48,202,233,0.75);
+  box-shadow:         0px 0px 5px 0px rgba(48,202,233,0.75);
 }
 
 .front, .back {

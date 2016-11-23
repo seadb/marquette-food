@@ -7,40 +7,6 @@
   padding-left: 20px;
   margin: 0px;
 }
-.farm {
-  background-color: white;
-  padding: 20px;
-  margin: 20px;
-  width: 400px;
-  -moz-box-shadow:    2px 2px 2px 0px rgba(15,15,15,0.25);
-  -webkit-box-shadow: 2px 2px 2px 0px rgba(15,15,15,0.25);
-  box-shadow:         2px 2px 2px 0px rgba(15,15,15,0.25);
-}
-
-.farm:hover {
-  -moz-box-shadow:    0px 0px 5px 0px rgba(48,202,233,0.75);
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(48,202,233,0.75);
-  box-shadow:         0px 0px 5px 0px rgba(48,202,233,0.75);
-}
-
-
-.selected-farm {
-  composes: farm;
-  -moz-box-shadow:    2px 2px 5px 0px rgba(15,15,15,0.25) inset;
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(15,15,15,0.25) inset;
-  box-shadow:         2px 2px 5px 0px rgba(15,15,15,0.25) inset;
-}
-
-.column {
-  display: flex;
-  flex-direction: column
-}
-.row {
-  display: flex;
-  flex-direction: row;
-  width: 1000px;
-}
-
 .card-image {
   overflow: hidden;
   vertical-align: middle;
@@ -51,6 +17,8 @@
 }
 
 .entry {
-  padding-right: 50px;
   padding-bottom: 1em;
+}
+.col {
+  padding: 0px;
 }
