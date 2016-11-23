@@ -5,16 +5,20 @@
 }
 
 .nav a {
-  color: black;
+  color: #30cae9;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   text-decoration: none;
   min-width: 50px;
-  padding: 50px;
+  padding: 40px;
   vertical-align: middle;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
@@ -23,20 +27,17 @@
   font-size: 64px;
   color: #30cae9;
   font-weight: bold;
+  padding: 20px;
 }
 
 .logo img {
   width: 50px;
-  padding-left: 15px;
   vertical-align: middle;
 }
 
 .body {
   background-color: #EEEEEE;
-  font-family: Lucida Grande, Helvetica, Arial;
-  font-size: 14px;
-  line-height: 1.6;
-  padding: 15px;
+  padding: 5% 7%;
 }
 
 a {
@@ -45,5 +46,22 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #27acc6;
+}
+
+body {
+  font-family: Lucida Grande, Helvetica, 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Roboto;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.75em;
 }

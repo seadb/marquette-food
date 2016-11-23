@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, Route, IndexRoute, hashHistory, IndexLink, Link } from 'react-router';
 import Farms from '../../farm';
-import Index from '../../Index';
+import Index from '../../index';
 
 const Routes = () => (
   <Router history={hashHistory}>

@@ -3,7 +3,11 @@ import styles from './styles.css';
 
 const Index = () => ( 
   <div className={styles.index} >
-    Welcome to the Marquette Food Directory
+    <h3>About</h3>
+    <p>
+     The Marquette Local Food Cooperative is intended to help people 
+     access information about local food vendors in Marquette County, Michigan.
+     </p>
     <h3> Sources </h3>
     <ul className={styles.plain}>
       <li>

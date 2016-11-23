@@ -7,8 +7,8 @@ const Glossary = () => {
   return (
     <div>
       <h3>Glossary</h3>
-      <div className={styles.row}>
-        <div className={styles.column} style={{width: '50%'}}>
+      <div className="row">
+        <div className="col-xs-12 col-sm-6">
           {glossary.slice(0,segment).map((entry, index) => (
               <div key={index} className={styles.entry}>
                 <b>{entry.term} </b>
@@ -17,8 +17,8 @@ const Glossary = () => {
               )
           )}
         </div>
-        <div className={styles.column} style={{width: '50%'}}>
-          {glossary.slice(segment, segment*2+1).map((entry, index) => (
+        <div className="col-xs-12 col-sm-6">
+          {glossary.slice(segment).map((entry, index) => (
               <div key={index} className={styles.entry}>
                 <b>{entry.term} </b>
                 {entry.definition}

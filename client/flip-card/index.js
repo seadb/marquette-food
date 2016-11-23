@@ -27,7 +27,7 @@ class FlipCard extends Component {
       >
      	  <div
           id={"inner"+ this.props.id}
-          className={addClasses(this.props.className, styles.flipper)}
+          className={addClasses(styles.flipper, this.props.className)}
         >
       		<div
             id={"front"+ this.props.id}
