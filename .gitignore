@@ -3,3 +3,4 @@ config.js
 directory.txt
 glossary.txt
 public/bundle.js
+npm-debug.log
