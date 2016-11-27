@@ -1,13 +1,12 @@
 /* app/styles.css */
 
 .nav {
-  background-color: #FFF;
 }
 
 .nav a {
-  color: #30cae9;
-  font-size: 1.5em;
-  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 3.0em;
+  font-family: 'Amatic SC', cursive;
   font-weight: bold;
   text-decoration: none;
   min-width: 50px;
@@ -15,17 +14,22 @@
   vertical-align: middle;
 }
 
+.nav a:hover {
+  color: #EEEEEE;
+}
+
 .header {
+  align-items: center;
+  background-color: #00b3ba;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
 }
 
 .logo {
   font-family: 'Amatic SC', cursive;
   font-size: 64px;
-  color: #30cae9;
+  color: #FFFFFF;
   font-weight: bold;
   padding: 20px;
 }
@@ -41,22 +45,24 @@
 }
 
 a {
-  color: #30cae9;
+  color: #00b3ba;
   text-decoration: none;
 }
 
 a:hover {
-  color: #27acc6;
+  color: #27b3ba;
 }
 
 body {
   font-family: Lucida Grande, Helvetica, 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.6;
+  margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Roboto;
+  margin-top: 0px;
 }
 
 h3 {
