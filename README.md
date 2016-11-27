@@ -18,6 +18,8 @@ Setup
 npm install
 ```
 
+Create a config.js in the root directory.  An example `config.example.js` is
+provided
 
 Development
 ---
@@ -31,6 +33,6 @@ Production
 ---
 1. `$ export NODE_ENV="production"`
 
-2. Create a config.js (config.example.js provided)
+2. `npm run start`
 
-3. `npm run start`
+3. Open browser to the hostname and port in config.js
