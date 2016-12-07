@@ -1,11 +1,11 @@
 var config = {
   production: {
-    host: 'localhost',
-    port: '3000'
+    host: 'PRIVATE_IP_ADDRESS',
+    port: '8080'
   },
   development: {
     host: 'localhost',
-    port: '3000'
+    port: '8080'
   }
 };
 
