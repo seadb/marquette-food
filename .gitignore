@@ -2,5 +2,6 @@ node_modules/
 config.js
 directory.txt
 glossary.txt
-public/bundle.js
 npm-debug.log
+stderr.txt
+stdout.txt
