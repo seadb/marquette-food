@@ -12,5 +12,5 @@ app.get('/', function(req, res) {
 var port = config[process.env.NODE_ENV]['port'];
 var host = config[process.env.NODE_ENV]['host'];
 app.listen(port, host, function () {
-  console.log('Example app listening at '+ host + ': ' + port);
+  console.log('Example app listening at '+ host + ':' + port);
 });
